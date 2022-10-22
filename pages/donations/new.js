@@ -14,7 +14,6 @@ class NewDonation extends Component {
 
   onSubmit = async (e) => {
     e.preventDefault();
-    console.log(this.state.inputValue);
 
     this.setState({ loading: true, errorMessage: "" });
 
