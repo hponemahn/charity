@@ -4,10 +4,9 @@ import { Grid, Card, Button, Label, Form } from "semantic-ui-react";
 import web3 from "../../ethereum/web3";
 import charity from "../../ethereum/charity";
 import DonateForm from "../../components/donateForm";
+import { Link } from "../../routes";
 
 class DonationShow extends Component {
-  
-
   static async getInitialProps({ query }) {
     const summary = await charity(query.address).methods.getSummary().call();
     return {
@@ -51,11 +50,16 @@ class DonationShow extends Component {
           <Grid.Row>
             <Grid.Column width={12}>
               {this.renderSummary()}
-              <Button
-                content="View Requests"
-                primary
-                style={{ marginTop: "20px" }}
-              />
+
+              <Link route={`/donations/${this.props.address}/requests`}>
+                <a>
+                  <Button
+                    content="View Requests"
+                    primary
+                    style={{ marginTop: "20px" }}
+                  />
+                </a>
+              </Link>
             </Grid.Column>
 
             <Grid.Column width={4}>

@@ -30,6 +30,16 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/donations/requests/create": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/donations/requests/create.js"
+    ],
+    "/donations/requests/list": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/donations/requests/list.js"
+    ],
     "/donations/show": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
