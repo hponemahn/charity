@@ -1,5 +1,5 @@
 # Charity
-Charity is a simple charity react web app built for the Ethereum blockchain. Donation requester creates a charity and donation requests. People see a list of charity and donate money to charity. If they donate to a charity, they become approvers. If donation requester get enough approve and money, finalize this request and send money to the recipient. 
+Charity is a charity react web app built for the Ethereum blockchain. Donation requester creates a charity and donation requests. People see a list of charity and donate money to charity. If they donate to a charity, they become approvers. If donation requester get enough approve and money, finalize this request and send money to the recipient. 
  
 ### Features
 - create a charity
